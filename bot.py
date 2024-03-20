@@ -7,9 +7,10 @@ bot = telebot.TeleBot('6878549381:AAGBMbUat0QKE09ou4LqKEXaUmbp9kyV1_w')
 
 
 # Set the webhook
-WEBHOOK_URL = "https://your-render-bot-url.com"  # Update with your Render URL
+WEBHOOK_URL = "https://granthsaara.onrender.com"  # Update with your Render URL
 bot.remove_webhook()
 bot.set_webhook(url=WEBHOOK_URL + "/bot")
+
 
 @bot.message_handler(commands=['start'])
 def start(message):
