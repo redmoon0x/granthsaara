@@ -118,9 +118,4 @@ def log_search(user_id, query):
     log_message = f"User {user_id} searched for: {query}"
     send_log_message(log_message)
 if __name__ == '__main__':
-    while True:
-        try:
-            
-        except Exception as e:
-            print(f"Error during polling: {e}")
-            time.sleep(10)  # Wait for 10 seconds before trying again
+    time.sleep(10)  # Wait for 10 seconds before trying again
